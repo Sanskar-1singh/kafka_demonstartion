@@ -50,4 +50,9 @@ difference between SSE and websocket
 
 websocket->bidirectional communication  it allow for full duplex communiaction,meaning that both the client the server can send and recieve messaage independently and simulatneously
 
+websocket operate over the ws://(or wss:// for secure connection) protocol,which is diffrent from the traditional http/https protocol.
+
+
 SSE->unidirectional communication SSE only allows the server to send data to the client the client cannot send data back through the same connection.if the client needs to communicate with the server it must do so using a separte http request>>
+
+SSE uses the traditional HTTP/HTTPs protocol.the server send data using the text/event stream MIME type.
